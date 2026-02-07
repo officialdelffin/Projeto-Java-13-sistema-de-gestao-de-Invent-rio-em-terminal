@@ -4,13 +4,13 @@ package br.com.officialdelffin.AbstractClass;
 
 
 // Classe abstrata de produtos :
-public class Product {
+abstract public class Product {
 
 
     // Atributos :
     private String name;
-    private double price ;
-    private int amount ;
+    private double price;
+    private int amount;
 
 
     // Metodos Getters e Setters :
@@ -46,12 +46,12 @@ public class Product {
 
 
     // Faz com que obrige ao criar o objeto passar os parametros name, price , amount :
-    public Product ( String name , double price , int amount ) {
+    public Product(String name, double price, int amount) {
 
 
-        this.name    = name;
-        this.price   = price;
-        this.amount  = amount;
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
 
 
     }
