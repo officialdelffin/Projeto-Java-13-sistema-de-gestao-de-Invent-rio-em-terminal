@@ -3,6 +3,8 @@
 package br.com.officialdelffin.AbstractClass;
 
 
+import java.util.ArrayList;
+
 // Classe abstrata de produtos :
 abstract public class Product {
 
@@ -64,7 +66,7 @@ abstract public class Product {
     public String toString() {
 
 
-        return "Nome do produto : " + this.getName() + "\nPreço : " + this.getPrice() + "\nQuantidade : " + this.getAmount();
+        return "\n\nNome do produto : " + this.getName() + "\nPreço : " + this.getPrice() + "\nQuantidade : " + this.getAmount();
 
 
     }
