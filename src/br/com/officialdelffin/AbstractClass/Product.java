@@ -56,4 +56,18 @@ public class Product {
 
     }
 
+
+    // Métodos :
+
+    // Fazendo a sobre carga do metodo to String :
+    @Override
+    public String toString() {
+
+
+        return "Nome do produto : " + this.getName() + "\nPreço : " + this.getPrice() + "\nQuantidade : " + this.getAmount();
+
+
+    }
+
+
 }
