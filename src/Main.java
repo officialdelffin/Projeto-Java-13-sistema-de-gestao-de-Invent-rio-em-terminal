@@ -38,15 +38,30 @@ public class Main {
         productList.add(perishableTwo);
 
 
-        // Exibindo a lista no terminal
-        productList.forEach( products -> );
-
-
+        // Sistema de ForEach para exibição das listas :
         for (Product products : productList) {
 
 
+            // Se o objeto na lista for uma instacia de produtos perecíveis :
+            if (products instanceof PerishableProduct perishableProduct) {
 
-            if (products instanceof FunitureProducts funitureProducts) {
+
+
+                System.out.printf("""
+                
+                Nome do produto : %s
+                Preço : %f
+                Quantidade : %d
+                Prazo de validade : %d
+                
+                """, perishableProduct.getName() , perishableProduct.getPrice() , perishableProduct.getAmount() , perishableProduct.getExpirationDate());
+
+
+            }
+
+
+            // Se o objeto na lista for uma instancia de produto mobilía :
+            else if (products instanceof FunitureProducts funitureProducts) {
 
 
                 System.out.printf("""
@@ -56,7 +71,7 @@ public class Main {
                 Quantidade : %d
                 Prazo de garantia : %d
                 
-                """, funitureProducts.getName() , funitureProducts.getPrice() , funitureProducts.getAmount() , funitureProducts.getW);
+                """, funitureProducts.getName() , funitureProducts.getPrice() , funitureProducts.getAmount() , funitureProducts.getWarrantyPeriod());
 
 
             }
