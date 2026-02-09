@@ -1,10 +1,11 @@
 
-
 // Pacotes :
 package br.com.officialdelffin.Objects;
 
 
+// Importações
 import br.com.officialdelffin.AbstractClass.Product;
+
 
 // Classe responsável por criar objetos de mobilia :
 public class FunitureProducts extends Product {
