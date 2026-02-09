@@ -9,7 +9,6 @@ Projeto em Java focado na aplicação prática de Orientação a Objetos. O sist
 import br.com.officialdelffin.AbstractClass.Product;
 import br.com.officialdelffin.Objects.FunitureProducts;
 import br.com.officialdelffin.Objects.PerishableProduct;
-
 import java.util.ArrayList;
 
 // Classe principal do sistema :
@@ -30,12 +29,12 @@ public class Main {
         var shampooDove = new PerishableProduct("Shamppo Dove", 29.50, 300, 10122026);
         var perishableOne = shampooDove;
 
-        var chipsRuffles = new PerishableProduct("Batata Ruffles" , 11.99 , 580 , 13072026);
+        var chipsRuffles = new PerishableProduct("Batata Ruffles", 11.99, 580, 13072026);
         var perishableTwo = chipsRuffles;
 
 
         // Instancias de produtos de mobilías :
-        var woonderChair = new FunitureProducts("Cadeira de madeira", 79.00, 70, 6 );
+        var woonderChair = new FunitureProducts("Cadeira de madeira", 79.00, 70, 6);
         var funitureOne = woonderChair;
 
         var woonderTable = new FunitureProducts("Mesa de madeira", 150.00, 70, 6);
@@ -45,6 +44,8 @@ public class Main {
         // Adicionando produto perecivel na ArrayList :
         productList.add(perishableOne);
         productList.add(perishableTwo);
+        productList.add(funitureOne);
+        productList.add(funitureTwo);
 
 
         // Sistema de ForEach para exibição das listas :
@@ -55,15 +56,14 @@ public class Main {
             if (products instanceof PerishableProduct perishableProduct) {
 
 
-
                 System.out.printf("""
-                
-                Nome do produto : %s
-                Preço : %f
-                Quantidade : %d
-                Prazo de validade : %d
-                
-                """, perishableProduct.getName() , perishableProduct.getPrice() , perishableProduct.getAmount() , perishableProduct.getExpirationDate());
+                        
+                        Nome do produto : %s
+                        Preço : %f
+                        Quantidade : %d
+                        Prazo de validade : %d
+                        
+                        """, perishableProduct.getName(), perishableProduct.getPrice(), perishableProduct.getAmount(), perishableProduct.getExpirationDate());
 
 
             }
@@ -74,13 +74,13 @@ public class Main {
 
 
                 System.out.printf("""
-                
-                Nome do produto : %s
-                Preço : %f
-                Quantidade : %d
-                Prazo de garantia : %d
-                
-                """, funitureProducts.getName() , funitureProducts.getPrice() , funitureProducts.getAmount() , funitureProducts.getWarrantyPeriod());
+                        
+                        Nome do produto : %s
+                        Preço : %f
+                        Quantidade : %d
+                        Prazo de garantia : %d
+                        
+                        """, funitureProducts.getName(), funitureProducts.getPrice(), funitureProducts.getAmount(), funitureProducts.getWarrantyPeriod());
 
 
             }
