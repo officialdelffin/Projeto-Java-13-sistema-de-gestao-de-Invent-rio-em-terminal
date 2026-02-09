@@ -30,8 +30,17 @@ public class Main {
         var shampooDove = new PerishableProduct("Shamppo Dove", 29.50, 300, 10122026);
         var perishableOne = shampooDove;
 
-        var batataRuffles = new PerishableProduct("Batata Ruffles" , 11.99 , 580 , 13072026);
-        var perishableTwo = batataRuffles;
+        var chipsRuffles = new PerishableProduct("Batata Ruffles" , 11.99 , 580 , 13072026);
+        var perishableTwo = chipsRuffles;
+
+
+        // Instancias de produtos de mobilías :
+        var woonderChair = new FunitureProducts("Cadeira de madeira", 79.00, 70, 6 );
+        var funitureOne = woonderChair;
+
+        var woonderTable = new FunitureProducts("Mesa de madeira", 150.00, 70, 6);
+        var funitureTwo = woonderTable;
+
 
         // Adicionando produto perecivel na ArrayList :
         productList.add(perishableOne);
