@@ -30,6 +30,9 @@ public class PerishableProduct extends Product {
     }
 
 
+    // Metodos getters e setters :
+
+    // Getters :
     public int getExpirationDate() {
 
 

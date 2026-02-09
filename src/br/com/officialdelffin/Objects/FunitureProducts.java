@@ -31,6 +31,9 @@ public class FunitureProducts extends Product {
     }
 
 
+    // Metodos getters e setters :
+
+    // Getters :
     public int getWarrantyPeriod() {
 
 
