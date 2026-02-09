@@ -24,17 +24,24 @@ public class Main {
 
 
         // Instancias de produtos pereciveis :
-        var perishableOne = new PerishableProduct("Shamppo Dove", 29.50, 300, 10122026);
-        var perishableTwo = new PerishableProduct("Batata Ruffles" , 11.99 , 580 , 13072026);
+        var shampooDove = new PerishableProduct("Shamppo Dove", 29.50, 300, 10122026);
+        var perishableOne = shampooDove;
 
+        var batataRuffles = new PerishableProduct("Batata Ruffles" , 11.99 , 580 , 13072026);
+        var perishableTwo = batataRuffles;
 
         // Adicionando produto perecivel na ArrayList :
         perishableProductList.add(perishableOne);
         perishableProductList.add(perishableTwo);
 
 
+
         // Exibindo a lista no terminal :
-        System.out.println(perishableProductList);
+        perishableProductList.forEach( productList -> System.out.printf("""
+                
+                
+                
+                """));
 
 
     }
