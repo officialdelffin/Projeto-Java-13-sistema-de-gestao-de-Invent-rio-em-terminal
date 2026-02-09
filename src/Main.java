@@ -35,13 +35,14 @@ public class Main {
         perishableProductList.add(perishableTwo);
 
 
-
-        // Exibindo a lista no terminal :
+        // Exibindo a lista no terminal
         perishableProductList.forEach( productList -> System.out.printf("""
                 
+                Nome do produto : %s
+                Preço : %f
+                Quantidade : %d
                 
-                
-                """));
+                """, productList.getName() , productList.getPrice() , productList.getAmount() ));
 
 
     }
