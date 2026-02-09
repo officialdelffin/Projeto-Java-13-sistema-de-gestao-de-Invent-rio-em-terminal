@@ -31,4 +31,11 @@ public class FunitureProducts extends Product {
     }
 
 
+    public int getWarrantyPeriod() {
+
+
+        return warrantyPeriod;
+
+
+    }
 }

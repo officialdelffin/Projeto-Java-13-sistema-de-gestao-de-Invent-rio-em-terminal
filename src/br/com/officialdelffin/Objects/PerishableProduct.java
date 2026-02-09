@@ -30,4 +30,15 @@ public class PerishableProduct extends Product {
     }
 
 
+    public int getExpirationDate() {
+
+
+
+        return expirationDate;
+
+
+
+    }
+
+
 }

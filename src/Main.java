@@ -5,8 +5,11 @@ Projeto em Java focado na aplicação prática de Orientação a Objetos. O sist
 
 
 // Importações :
+
 import br.com.officialdelffin.AbstractClass.Product;
+import br.com.officialdelffin.Objects.FunitureProducts;
 import br.com.officialdelffin.Objects.PerishableProduct;
+
 import java.util.ArrayList;
 
 // Classe principal do sistema :
@@ -20,7 +23,7 @@ public class Main {
         // ArrayLists :
 
         // Produtos pereciveis :
-        ArrayList<Product> perishableProductList = new ArrayList<>();
+        ArrayList<Product> productList = new ArrayList<>();
 
 
         // Instancias de produtos pereciveis :
@@ -31,18 +34,35 @@ public class Main {
         var perishableTwo = batataRuffles;
 
         // Adicionando produto perecivel na ArrayList :
-        perishableProductList.add(perishableOne);
-        perishableProductList.add(perishableTwo);
+        productList.add(perishableOne);
+        productList.add(perishableTwo);
 
 
         // Exibindo a lista no terminal
-        perishableProductList.forEach( productList -> System.out.printf("""
+        productList.forEach( products -> );
+
+
+        for (Product products : productList) {
+
+
+
+            if (products instanceof FunitureProducts funitureProducts) {
+
+
+                System.out.printf("""
                 
                 Nome do produto : %s
                 Preço : %f
                 Quantidade : %d
+                Prazo de garantia : %d
                 
-                """, productList.getName() , productList.getPrice() , productList.getAmount() ));
+                """, funitureProducts.getName() , funitureProducts.getPrice() , funitureProducts.getAmount() , funitureProducts.getW);
+
+
+            }
+
+
+        }
 
 
     }
