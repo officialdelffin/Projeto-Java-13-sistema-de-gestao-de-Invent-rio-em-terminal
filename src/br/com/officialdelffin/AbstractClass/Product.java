@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 
 // Classe abstrata de produtos :
-abstract public class Product {
+abstract public class Product implements Comparable<Product>{
 
 
     // Atributos :
@@ -56,6 +56,20 @@ abstract public class Product {
         this.name = name;
         this.price = price;
         this.amount = amount;
+
+
+    }
+
+
+    // Sobreescrita de metodos :
+
+    // CompareTo de Comparable :
+    @Override
+    public int compareTo(Product listWithComparation) {
+
+
+        // Estou pedindo para comparar os nomes dos objetos da classe Product e com isso ele consegue fazer a ordernação por ordem alfabética :
+        return this.getName().compareTo(listWithComparation.getName());
 
 
     }
