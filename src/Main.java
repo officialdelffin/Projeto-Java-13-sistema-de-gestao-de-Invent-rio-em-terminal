@@ -17,16 +17,8 @@ import java.util.Collections;
 
 
 // Classe principal do sistema :
-public class Main implements Comparable<Product>{
+public class Main {
 
-
-    // Sobreescrita de metodos :
-
-    // CompareTo de Comparable :
-    @Override
-    public int compareTo(Product o) {
-        return 0;
-    }
 
 
     // Executa o sistema principal :
