@@ -40,6 +40,8 @@ public class Main {
         var chipsRuffles = new PerishableProduct("Batata Ruffles", 11.99, 580, 13072026);
         var perishableTwo = chipsRuffles;
 
+        var rice = new PerishableProduct("Arroz" , 19.99 , 200 , 13122026);
+
 
         // Instancias de produtos de mobilías :
         var lampshade = new FunitureProducts("Abajur" , 39.99 , 25 , 12);
