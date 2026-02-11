@@ -41,6 +41,7 @@ public class Main {
         var perishableTwo = chipsRuffles;
 
         var rice = new PerishableProduct("Arroz" , 19.99 , 200 , 13122026);
+        var perishableTree = rice;
 
 
         // Instancias de produtos de mobilías :
@@ -60,6 +61,7 @@ public class Main {
         productList.add(funitureOne);
         productList.add(funitureTwo);
         productList.add(furnitureTree);
+        productList.add(perishableTree);
 
         Collections.sort(productList);
 
