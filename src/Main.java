@@ -12,10 +12,21 @@ import br.com.officialdelffin.AbstractClass.Product;
 import br.com.officialdelffin.Objects.FunitureProducts;
 import br.com.officialdelffin.Objects.PerishableProduct;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 
 // Classe principal do sistema :
-public class Main {
+public class Main implements Comparable<Product>{
+
+
+    // Sobreescrita de metodos :
+
+    // CompareTo de Comparable :
+    @Override
+    public int compareTo(Product o) {
+        return 0;
+    }
 
 
     // Executa o sistema principal :
@@ -26,6 +37,8 @@ public class Main {
 
         // Produtos pereciveis :
         ArrayList<Product> productList = new ArrayList<>();
+
+
 
 
         // Instancias de produtos pereciveis :
@@ -49,6 +62,8 @@ public class Main {
         productList.add(perishableTwo);
         productList.add(funitureOne);
         productList.add(funitureTwo);
+
+        Collections.sort(productList);
 
 
         // Sistema de ForEach para exibição das listas :
