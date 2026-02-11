@@ -42,6 +42,9 @@ public class Main {
 
 
         // Instancias de produtos de mobilías :
+        var lampshade = new FunitureProducts("Abajur" , 39.99 , 25 , 12);
+        var furnitureTree = lampshade;
+
         var woonderChair = new FunitureProducts("Cadeira de madeira", 79.00, 70, 6);
         var funitureOne = woonderChair;
 
@@ -54,6 +57,7 @@ public class Main {
         productList.add(perishableTwo);
         productList.add(funitureOne);
         productList.add(funitureTwo);
+        productList.add(furnitureTree);
 
         Collections.sort(productList);
 
